@@ -1,33 +1,164 @@
-.App {
-  text-align: center;
+@import url('index.css');
+
+.card-link {
+  color: #249E13;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.card-link:hover {
+  color: green;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-add-to-cart, .btn-search {
+  background-color: #F6F930;
+  color: #249E13;
+  box-shadow: 0px 3px 8px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-add-to-cart:hover {
+  background-color: #F6F942;
+  color: #249E13;
+  box-shadow: 0px 1px 2px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-search:hover {
+  background-color: #F6F942;
+  color: #249E13;
+  box-shadow: 0px 0px 1px 0px;
+}
+
+.card-main-page {
+  background-color: #efefef;
+  color: #249E13;
+  border: solid 1px #249E13;
+}
+
+.card-for-dish {
+  margin: 6% 3% 3% 3%;
+}
+
+.nav-margin {
+  margin-top: 3%;
+ }
+
+.fa-shopping-cart:hover {
+  color: #F6F942;
+}
+
+.num-of-dish {
+  font-size: 1em;
+  background-color: #249E13;
+  color: #fff;
+}
+
+.total-price {
+  font-size: 1em;
+  color: #249E13;
+}
+
+.plus-minus {
+  border: none;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  color: #249E13;
+}
+
+.plus-minus:hover {
+  background-color: #F6F942;
+}
+
+.cart-is-empty {
+  height: 80vh;
+}
+
+.cart-title {
+ margin-top: 10%;
+}
+
+.cart-list {
+  margin: 5% 10% 30% 10%;
+}
+
+.num-in-cart {
+  background-color: red;
+  border-radius: 50px; 
+  position: absolute;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 20px;
+}
+
+@media (max-width: 575.98px) { 
+  .cart-title {
+   margin-top: 23%;
   }
-  to {
-    transform: rotate(360deg);
+
+ .nav-margin {
+  margin-top: 10%;
+ }
+ .card-for-dish {
+  margin: 20% 10% 5% 10%;
+ }
+ .cart-list {
+  margin: 20% 5% 30% 5%;
+  }
+  .cart-img {
+    width: 40px;
   }
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .cart-title {
+   margin-top: 15%;
+  }
+  .nav-margin {
+  margin-top: 6%;
+ }
+  .cart-list {
+  margin: 15% 5% 30% 5%;
+  }
+  .cart-img {
+    width: 55px;
+  }
+  .card-for-dish {
+  margin: 11% 4% 5% 4%;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .cart-title {
+   margin-top: 15%;
+  }
+ .cart-list {
+  margin: 14% 10% 30% 10%;
+  }
+ .cart-img {
+    width: 65px;
+  }
+  .card-for-dish {
+  margin: 10% 4% 5% 4%;
+ }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+ .cart-img {
+    width: 70px;
+  }
+  .card-for-dish {
+  margin: 8% 3% 3% 3%;
+ }
+}
+
+@media (min-width: 1200px) { 
+ .nav-margin {
+  margin-top: 2%;
+ }
+  
+ .cart-img {
+    width: 80px;
+  }
+}
+
+
+
+
